@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            background-color: gray;
+        }
+        .cc{
+            width: 300px;
+            height: 600px;
+            background-color: purple;
+            border-left:300px solid green;
+            margin: 200px auto;
+            border-radius: 300px;
+            transition: all .6s ease-in-out;
+            -webkit-transition: all .6s ease-in-out;
+            -moz-transition: all .6s ease-in-out;
+            -o-transition: all .6s ease-in-out;
+
+        }
+        .cc:after,.cc:before{
+            content: "";
+            display: block;
+            width:100px;
+            height: 100px;
+            background-color: green;
+            border: 100px solid purple;
+            margin-left: -150px;
+            border-radius: 50%;
+
+
+        }
+        .cc:before{
+            background-color: purple;
+            border: 100px solid green;
+
+        }
+
+
+        .zz{
+            width: 200px;
+            height: 200px;
+            border-bottom: 1px solid purple;transform: rotate(45deg);
+            margin: 0 auto;
+        }
+
+
+       .cc:hover{
+            transform: rotate(360deg);
+           -webkit-transform: rotate(360deg);
+           -moz-transform: rotate(360deg);
+           -o-transform: rotate(360deg);
+           -ms-transform: rotate(360deg);
+
+       }
+    </style>
+
+
+
+
+
+</head>
+<body>
+<div class="cc"></div>
+<div class="zz"></div>
+</body>
+</html>
